@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- navegação do site, links-->
+  <nav id="navigation">
+    <!-- div wrapper padrão -->
+    <div class="wrapper">
+
+      <div class="menu">
+        <ul>
+          <li><a onclick="closeMenu()" href="#home">Sobre mim</a></li>
+          <li><a onclick="closeMenu()" href="#services">Portfólio</a></li>
+          <li><a onclick="closeMenu()" href="#about">Formação</a></li>
+          <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
+        </ul>
+
+
+        <ul class="social-links">
+          <li>
+            <a target="_blank" href="https://instagram.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                  stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                  stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://facebook.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                  stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://youtube.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                  stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+
+      </button>
+
+    </div>
+  </nav>
+
+  <section id="home">
+    <!-- inicio do site -->
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h4>Desenvolvedor FullStack</h4>
+          <h1>Apolo Moraes de Souza</h1>
+        </header>
+
+        <div class="content">
+          <p>Olá meu nome é Apolo, tenho 18 anos e estudo Desenvolvimento de Software. Desde pequeno sou apaixonado em
+            tecnologia, tive meu primeiro contato com a área com apenas 8 anos de idade, fazendo um curso de informática
+            básica. Hoje faço graduação em Análise e Desenvolvimentos de Sistemas e estou em busca da minha primeira
+            vaga na área.</p>
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="assets/desenvolvimento-de-software.png" alt="Foto de computador">
+      </div>
+
+
+    </div>
+  </section>
+  <!-- servicos, projetos-->
+  <section id="services">
+    <div class="wrapper">
+      <header>
+        <h4>Projetos</h4>
+        <h2>Um pouco do meu aprendizado</h2>
+      </header>
+
+      <div class="content">
+        <div class="cards">
+          <div class="card">
+
+            <h3><a href="https://github.com/apolomoraes/food-explorer_front-end" target="_blank">Food Explorer</a></h3>
+            <p>Aplicação para ser usada como cardápio digital ou menu interativo para um restaurante, lanchonete, etc.
+            </p>
+          </div>
+
+          <div class="card">
+
+
+            <h3><a href="https://github.com/apolomoraes/rocketnotes" target="_blank">RocketNotes</a></h3>
+            <p>Aplicação para salvar e gerenciar seus links úteis.</p>
+          </div>
+
+          <div class="card">
+
+
+            <h3><a href="https://github.com/apolomoraes/rocketmovies" target="_blank">RocketMovies</a></h3>
+            <p>Aplicação para acompanhar tudo que assistir.</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- sobre miinha formações e cursos-->
+  <section id="about">
+    <div class="wrapper">
+
+      <div class="col-a">
+        <header>
+          <h4>Formação</h4>
+          <h2>Cursos e formações</h2>
+        </header>
+
+        <div class="content">
+          <p>Ao longo da minha trajetória fiz alguns cursos, como o curso de Desenvolvimento FullStack da Rocketseat,
+            que aborda Desenvolvimento Web. Também fiz o curso da Mesttra de Desenvolvimento de Software, que usava a
+            linguagem JavaScript. E atualmente faço graduação em ADS na UNINTER</p>
+
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="assets/fahim-muntashir-14JOIxmsOqA-unsplash.jpg" alt="Imagem de notebook">
+      </div>
+
+    </div>
+  </section>
+  <!-- meu contato-->
+  <section id="contact">
+    <div class="wrapper">
+
+      <div class="col-a">
+        <header>
+          <h2>Entre em contato comigo!</h2>
+        </header>
+
+        <div class="content">
+          <a class="button" href="https://github.com/apolomoraes" target="_blank"> <svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px">
+              <path
+                d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z" />
+            </svg></a>
+        </div>
+      </div>
+
+      <div class="col-b">
+        <form class="form">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" required />
+          <label for="telefone">Telefone</label>
+          <input type="number" name="telefone" id="telefone" required />
+          <label for="email">E-mail</label>
+          <input type="text" name="email" id="email" required />
+          <label for="message">Mensagem</label>
+          <textarea name="message" id="message" required></textarea>
+          <button class="send">Enviar</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+
+  <a id="backToTopButton" class="show" href="#home">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#00856F" />
+      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+  </a>
+
+  <!-- ScrollReaveal Lib -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
